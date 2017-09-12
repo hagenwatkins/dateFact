@@ -22,12 +22,16 @@ let dayLight = chalk.greenBright(moment().isDST()
 
   }
   console.log(dayLight);
-  
-let leapYear = chalk.greenBright(moment().isLeapYear()
-);
-console.log('it is during',leapYear);
 
-  // console.log('it is',currentDate,'it is the', day,
-  // 'day of the year','it is during', dayLight, leapYear,message);
+let leapYear = chalk.greenBright(moment().isLeapYear());
+
+  console.log(" is it during leap Year",leapYear);
+
+
+
+console.log('it is',currentDate,'it is the', day,
+   'day of the year','it is during', "dst", dayLight,"leap year?" +" "+ leapYear);
 }
+logger();
+
 module.exports = logger;

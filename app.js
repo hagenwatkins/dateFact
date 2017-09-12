@@ -8,6 +8,7 @@
 //   console.log(`Hello, ${name}!`);
 //   rl.close();
 // });
+const logger = require('logger')
 const readline = require('readline');
 const rl = readline.createInterface({
     input: process.stdin,
